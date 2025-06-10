@@ -18,12 +18,6 @@ if (window.location.pathname.includes("index.html")) {
             return;
         }
 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            alert("Por favor, insira um e-mail válido.");
-            return;
-        }
-
         const novoUsuario = { nome, email, usuario, senha };
         usuarios.push(novoUsuario);
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
