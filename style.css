@@ -1,0 +1,187 @@
+body {
+    background: #f0f2f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+body.Cadastro-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 24px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #1565c0;
+}
+        .books-container {
+            background: #fff;
+            padding: 32px 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 400px;
+            margin: 40px auto;
+        }
+        .books-container h2 {
+            margin-bottom: 24px;
+        }
+        .book-list {
+            list-style: none;
+            padding: 0;
+        }
+        .book-list li {
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        .book-title {
+            font-weight: bold;
+        }
+        .book-author {
+            color: #1976d2;
+        }
+        .book-list {
+            list-style: none;
+            padding: 0;
+        }
+        .book-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #eee;
+        }
+        .book-cover {
+            width: 80px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .book-info {
+            flex: 1;
+        }
+        .book-title a {
+            font-weight: bold;
+            color: #1976d2;
+            text-decoration: none;
+        }
+        .book-title a:hover {
+            text-decoration: underline;
+        }
+        .book-author {
+            color: #333;
+        }
+         .books-container {
+        max-width: 600px;
+        margin: 32px auto;
+        background: #fff;
+        padding: 24px 12px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .books-container h2 {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .book-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .book-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 24px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #eee;
+    }
+    .book-cover {
+        width: 80px;
+        min-width: 80px;
+        height: 120px;
+        object-fit: contain;
+        border-radius: 4px;
+        background: #f5f5f5;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .book-info {
+        flex: 1;
+    }
+    .book-title a {
+        font-weight: bold;
+        color: #1976d2;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+    .book-title a:hover {
+        text-decoration: underline;
+    }
+    .book-author {
+        color: #333;
+    }
+    @media (max-width: 600px) {
+        .books-container {
+            max-width: 98vw;
+            padding: 12px 2vw;
+        }
+        .book-list li {
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .book-cover {
+            width: 60vw;
+            max-width: 180px;
+            height: auto;
+            min-width: 0;
+        }
+        .book-info {
+            text-align: center;
+        }
+    }

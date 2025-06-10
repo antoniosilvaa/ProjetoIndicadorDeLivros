@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="Cadastro-page">
+    <div class="login-container">
+        <h2>Criar Novo Usuário</h2>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" required>
+            
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p>Já tem uma conta? <a href="contaCriada.html">Faça login</a></p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("zL1FWRRBtfMwQhjzC");
+    })();
+</script>
+</body>
+</html>
