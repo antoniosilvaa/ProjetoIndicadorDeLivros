@@ -11,6 +11,25 @@ if (window.location.pathname.includes("index.html")) {
             alert("Preencha todos os campos obrigatórios.");
             return;
         }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!nome.match(/^[a-zA-Z\s]+$/)) {
+            alert("O nome deve conter apenas letras e espaços.");
+            return;
+        }
+        if (!emailRegex.test(email)) {
+            alert("Por favor, insira um e-mail válido.");
+            return;
+        }
+        if (senha.length < 6) {
+            alert("A senha deve ter pelo menos 6 caracteres.");
+            return;
+        }
+        if (usuario.length < 3) {
+            alert("O usuário deve ter pelo menos 3 caracteres.");
+            return;
+        }
+
         let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
         const usuarioExistente = usuarios.find(u => u.usuario === usuario || u.email === email);
         if (usuarioExistente) {
